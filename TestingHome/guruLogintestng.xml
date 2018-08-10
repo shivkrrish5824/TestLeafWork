@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+  <parameter name="Url" value="http://www.demo.guru99.com/V4/"></parameter>
+  <parameter name="username" value="mngr145184"></parameter>
+  <parameter name="password" value="qAvYrUm"></parameter>
+    <classes>
+      <class name="guruDemoTestCases.Login"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
