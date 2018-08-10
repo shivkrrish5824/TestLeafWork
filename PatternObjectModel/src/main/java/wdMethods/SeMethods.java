@@ -172,7 +172,15 @@ public class SeMethods extends Reporter implements WdMethods{
 		} 
 		return bReturn;
 	}
-
+	public String getCurretnUrl() {		
+		String bReturn = "";
+		try {
+			bReturn =  driver.getCurrentUrl();
+		} catch (WebDriverException e) {
+			reportStep("Unknown Exception Occured While fetching Title", "FAIL");
+		} 
+		return bReturn;
+	}
 	public String getAttribute(WebElement ele, String attribute) {		
 		String bReturn = "";
 		try {
